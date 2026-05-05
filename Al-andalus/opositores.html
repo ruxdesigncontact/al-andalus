@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logoactual.jpeg">
+    <title>Opositores | Al-Andalus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logoactual.jpeg" alt="Logo Al-Ándalus" class="escudo">
+            <img src="name.png" alt="Logo Al-Ándalus" class="name">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="escuelas.html">Escuelas</a></li>
+            <li><a href="opositores.html">Oposiciones CNP</a></li>
+            <li><a href="index.html#inscripciones" class="btn-cta">¡Únete ahora!</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="page-header">
+            <h1>Oposiciones <span class="higlight">CNP</span></h1>
+        </section>
+        <section class="coaches-section">
+            <h2>Entrenadores</h2>
+            <div class="coaches-grid">
+                <div class="coach-card">
+                    <img src="entrenador.jpg" alt="Fernando Ariza" class="coach-img">
+                    <h3>Miguel Ángel Quesada</h3>
+                    <p class="role">Instructor CNP</p>
+                    <p>Especialista en preparación física para el CNP. Enfoque en optimización de tiempos y superación
+                        de marcas personales para el apto.</p>
+                </div>
+                <div class="coach-card">
+                    <img src="entrenador.jpg" alt="Fernando Ariza" class="coach-img">
+                    <h3>Cristian Zamorano</h3>
+                    <p class="role">Instructor CNP</p>
+                    <p>Experto en fuerza y potencia explosiva. Especialista en la preparación específica de dominadas y
+                        suspensión.</p>
+                </div>
+                <div class="coach-card">
+                    <img src="entrenador.jpg" alt="Fernando Ariza" class="coach-img">
+                    <h3>Jesús Segura</h3>
+                    <p class="role">Instructor CNP</p>
+                    <p>Especialista en biomecánica y técnica de carrera. Optimización de la zancada para los 1000m y
+                        agilidad máxima en el circuito técnico.</p>
+                </div>
+                <div></div>
+                <a href="#inscripcion-opositores" class="btn-primary">Solicitar plaza</a>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Nuestros turnos</h2>
+            <div class="grid-grupos">
+                <div class="card-grupo">
+                    <h3>Turno 1</h3>
+                    <p>Lunes, Miércoles y Viernes</p>
+                    <p><strong>Mañana:</strong> 8:30</p>
+                    <p><strong>Tarde:</strong> 20:30</p>
+                </div>
+                <div class="card-grupo">
+                    <h3>Turno 2</h3>
+                    <p>Miércoles y Viernes: 8:30</p>
+                    <p>Sábados: 9:00</p>
+                </div>
+                <div class="card-grupo">
+                    <h3>Turno 3</h3>
+                    <p>Martes y Jueves: 20:30</p>
+                    <p>Sábado: 9:00 </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="inscripcion-opositores" class="form-section">
+            <h2>Inscripción Grupo <span class="highlight">Opositores CNP</span></h2>
+            <p>Entrena con Miguel Ángel Quesada, Cristian Zamorano y Jesús Segura en El Fontanar.</p>
+
+            <form action="https://formspree.io/f/mzdopwzq" method="POST" class="opositores-form">
+                <input type="hidden" name="_subject" value="Nueva Solicitud: OPOSICIONES CNP">
+
+                <div class="form-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" name="Nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label>Edad</label>
+                        <input type="number" name="Edad" placeholder="Ej: 24" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="tel" name="Teléfono" placeholder="600 000 000" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>¿A qué turno te unirás?</label>
+                    <select name="Turno">
+                        <option value="" disabled selected>Selecciona tu turno</option>
+                        <option value="Turno 1">Turno 1</option>
+                        <option value="Turno 2">Turno 2</option>
+                        <option value="Turno 3">Turno 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>¿Has preparado pruebas físicas antes?</label>
+                    <select name="experiencia">
+                        <option value="" disabled selected>Selecciona tu experiencia</option>
+                        <option value="Principiante">No, empiezo de cero</option>
+                        <option value="Intermedio">He entrenado por mi cuenta</option>
+                        <option value="Avanzado">Ya he aprobado otras veces</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Observaciones o dudas</label>
+                    <textarea name="mensaje" rows="4" placeholder="Cuéntanos tus dudas..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Solicitud</button>
+            </form>
+        </section>
+
+        <section class="info-section">
+            <h2>¿Dónde entrenamos?</h2>
+            <div class="ubicación-container">
+                <ul class="faq-list">
+                    <li><strong>Instalación:</strong> IDM Fontanar.</li>
+                    <li><strong>Punto de encuentro:</strong> C/ Castelló d'Empuries, 5</li>
+                    <li><strong>Acceso:</strong> Entrada principal de deportistas.</li>
+                    <li>
+                        <cite>*Se ruega llegar 5-10 minutos antes para organizar el grupo</cite>.
+                    </li>
+
+                    <div class="mapa-placeholder">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.5144873477852!2d-4.7959321!3d37.8716492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d209ed398a679%3A0xfe712c38b88f228b!2sINSTALACI%C3%93N%20DEPORTIVA%20Y%20PISTA%20DE%20ATLETISMO%20EL%20FONTANAR!5e0!3m2!1ses!2ses!4v1777535710801!5m2!1ses!2ses"
+                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy=" no-referrer-when-downgrade"></iframe>
+                    </div>
+            </div>
+        </section>
+
+        <section class="contacto-directo">
+            <h3>¿Tienes dudas sobre las pruebas físicas?</h3>
+            <p>Contacta directamente con nosotros para recibir asesoramiento personalizado:</p>
+            <div class="botones-contacto">
+                <a href="https://wa.me/34691984336" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                </a>
+                <div class="telefonos">
+                    <p><strong>Llámanos:</strong></p>
+                    <a href="tel:+34691984336">691 984 336</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column about">
+                <img src="name.png" alt="Logo Al-Ándalus" class="footer-logo">
+                <p>Pasión por el atletismo en el corazón de Córdoba. Formamos atletas, forjamos personas.</p>
+            </div>
+            <div class="footer-column links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="equipo.html">Equipo Técnico</a></li>
+                    <li><a href="escuelas.html">Escuelas</a></li>
+                    <li><a href="opositores.html">Opositores CNP</a></li>
+                    <li><a href="index.html#inscripciones">Inscripciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact">
+                <h4>Dónde estamos</h4>
+                <p>📍 IDM El Fontanar, Córdoba</p>
+                <p>📧 al.andalusatletismocordoba@gmail.com</p>
+                <p>📞 +34 620 585 735 / +34 620 905 347</p>
+            </div>
+
+            <div class="footer-column social">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/clubdeatletismoalandalus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        class="social-icon" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.instagram.com/clubdeatletismoalandalus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        class="link"><em>@clubatletismoalandalus</em></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Club de Atletismo Al-Andalus Córdoba. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
