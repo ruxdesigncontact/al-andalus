@@ -121,4 +121,16 @@
         padding: 15px 15px !important;
         text-align: center;
     }
+
+    .body-records {
+        padding-top: 80px;
+    }
+
+    .records-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .bloque-categoria {
+        font-size: 1.4rem;
+    }
 }
