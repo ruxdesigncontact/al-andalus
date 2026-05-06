@@ -15,20 +15,31 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logoactual.jpeg" alt="Logo Al-Ándalus" class="escudo">
-            <img src="name.png" alt="Logo Al-Ándalus" class="name">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="equipo.html">Equipo</a></li>
-            <li><a href="escuelas.html">Escuelas</a></li>
-            <li><a href="calendario.html">Calendario</a></li>
-            <li><a href="opositores.html">Oposiciones CNP</a></li>
-            <li><a href="index.html#inscripciones" class="btn-cta">¡Únete ahora!</a></li>
-        </ul>
-    </nav>
+    <header class="header-principal">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logoactual.jpeg" alt="Logo Al-Ándalus" class="escudo">
+                <img src="name.png" alt="Nombre Al-Ándalus" class="name">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipo.html">Equipo Técnico</a></li>
+                <li><a href="escuelas.html">Escuelas</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="opositores.html">Opositores CNP</a></li>
+                <li><a href="#inscripciones" class="btn-nav">Inscripciones</a></li>
+            </ul>
+        </nav>
+        <div class="menu-overlay" id="menu-overlay"></div>
+    </header>
+
     <main class="content-page">
         <section class="page-header">
             <h1>Sobre el <span class="highlight">Club</span></h1>
@@ -165,6 +176,40 @@
             <p>&copy; 2026 Club de Atletismo Al-Andalus Córdoba. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            const overlay = document.getElementById('menu-overlay');
+            const links = document.querySelectorAll('.nav-links a');
+
+            const toggleMenu = () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                overlay.classList.toggle('active');
+
+                if (navLinks.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            };
+
+            if (hamburger && overlay) {
+                hamburger.addEventListener('click', toggleMenu);
+                overlay.addEventListener('click', toggleMenu);
+            }
+
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        toggleMenu();
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
