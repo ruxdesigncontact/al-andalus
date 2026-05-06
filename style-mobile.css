@@ -1,20 +1,4 @@
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .nav-links {
-        margin-top: 15px;
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-links li a {
-        font-size: 0.8rem;
-    }
-
     .hero {
         height: 60vh;
     }
@@ -102,5 +86,39 @@
 
     .cal-fecha {
         margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        width: 55%;
+        gap: 1.5rem;
+    }
+
+    .navbar {
+        padding: 0 15px;
+        height: 70px;
+    }
+
+    .name {
+        height: 30px;
+    }
+
+    .escudo {
+        height: 22px;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .btn-nav {
+        width: 80%;
+        margin-top: 10px;
+        padding: 15px 15px !important;
+        text-align: center;
     }
 }
