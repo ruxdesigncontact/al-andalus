@@ -1110,3 +1110,60 @@ html {
 .hidden {
     display: none !important;
 }
+
+.maintenance-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.maintenance-icon {
+    font-size: 80px;
+    color: var(--naranja);
+    margin-bottom: 20px;
+    animation: wrench-move 2.5s infinite ease-in-out;
+}
+
+@keyframes wrench-move {
+
+    0%,
+    100% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+}
+
+.maintenance-container h1 {
+    font-size: 3rem;
+    color: var(--negro);
+    margin-bottom: 15px;
+}
+
+.maintenance-container p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.btn-volver {
+    background-color: var(--naranja);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.btn-volver:hover {
+    transform: scale(1.05);
+}

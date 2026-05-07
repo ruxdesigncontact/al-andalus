@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logoactual.jpeg">
+    <title>Inicio | Al-Andalus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="header-principal">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logoactual.jpeg" alt="Logo Al-Ándalus" class="escudo">
+                <img src="name.png" alt="Nombre Al-Ándalus" class="name">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipo.html">Equipo Técnico</a></li>
+                <li><a href="escuelas.html">Escuelas</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="records.html">Récords</a></li>
+                <li><a href="opositores.html">Opositores CNP</a></li>
+                <li><a href="#inscripciones" class="btn-nav">Inscripciones</a></li>
+            </ul>
+        </nav>
+        <div class="menu-overlay" id="menu-overlay"></div>
+    </header>
+    <div class="maintenance-container">
+        <div class="maintenance-icon">
+            <i class="fas fa-tools"></i>
+        </div>
+        <h1>Sección en Obras</h1>
+        <p>Estamos entrenando duro para mejorar esta parte de nuestra web. El equipo del <strong>Club
+                Al-Andalus</strong> volverá a tener esta sección disponible muy pronto.</p>
+        <a href="index.html" class="btn-volver">
+            <i class="fas fa-arrow-left"></i> Volver al Inicio
+        </a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            const overlay = document.getElementById('menu-overlay');
+            const links = document.querySelectorAll('.nav-links a');
+
+            const toggleMenu = () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                overlay.classList.toggle('active');
+
+                if (navLinks.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            };
+
+            if (hamburger && overlay) {
+                hamburger.addEventListener('click', toggleMenu);
+                overlay.addEventListener('click', toggleMenu);
+            }
+
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        toggleMenu();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
