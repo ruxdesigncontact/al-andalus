@@ -1082,3 +1082,31 @@ html {
     font-weight: normal;
     font-size: 0.85rem;
 }
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    border: 2px solid var(--naranja);
+    background: transparent;
+    color: var(--negro);
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--naranja);
+    color: white;
+}
+
+.hidden {
+    display: none !important;
+}

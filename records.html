@@ -47,164 +47,225 @@
             <p>Récords Históricos del Club de Atletismo Al-Ándalus</p>
         </header>
 
-        <h2 class="bloque-categoria">Categorías Menores</h2>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="masc">Maculino</button>
+            <button class="filter-btn" data-filter="fem">Femenino</button>
+        </div>
+
         <div class="grid-records">
-            <div class="card-record">
-                <h3>Sub 12</h3>
+            <div class="card-record" data-gender="masc">
+                <h3>Sub 12 - Masculino</h3>
                 <div class="linea-record"><span>60m Lisos</span> <strong>9,09s <small>Samuel</small></strong></div>
                 <div class="linea-record"><span>60m Vallas</span> <strong>9,97s <small>Javi Simón</small></strong></div>
-                <div class="linea-record"><span>Longitud</span> <strong>4,08m <small>Ana Velayos</small></strong></div>
-                <div class="linea-record"><span>Peso</span> <strong>7,81m <small>Vera</small></strong></div>
-                <div class="linea-record"><span>Altura</span> <strong>1,22m <small>Olivia Sánchez</small></strong></div>
                 <div class="linea-record"><span>Jabalina</span> <strong>19,16m <small>Alonso Franco</small></strong>
-                </div>
-                <div class="linea-record"><span>1000m (KM)</span> <strong>3:56,79 <small>Ana Velayos</small></strong>
                 </div>
                 <div class="linea-record"><span>Disco</span> <strong>19,57m <small>Martín Ariza</small></strong></div>
                 <div class="linea-record"><span>500m</span> <strong>1:45,88s <small>Marco Cámara</small></strong></div>
-                <div class="linea-record"><span>Marcha</span> <strong>13:17,46s <small>M.ª Mar</small></strong></div>
-                <div class="linea-record"><span>Martillo</span> <strong>21,95m <small>Vera</small></strong>
-                </div>
                 <div class="linea-record"><span>Pértiga (foso)</span> <strong>3,20m <small>Jorge Díaz</small></strong>
                 </div>
-
             </div>
-
-            <div class="card-record">
-                <h3>Sub 14</h3>
+            <div class="card-record" data-gender="fem">
+                <h3>Sub 12 - Femenino</h3>
+                <div class="linea-record"><span>Longitud</span> <strong>4,08m <small>Ana Velayos</small></strong>
+                </div>
+                <div class="linea-record"><span>Peso</span> <strong>7,81m <small>Vera</small></strong></div>
+                <div class="linea-record"><span>Altura</span> <strong>1,22m <small>Olivia Sánchez</small></strong>
+                </div>
+                <div class="linea-record"><span>1000m (KM)</span> <strong>3:56,79 <small>Ana Velayos</small></strong>
+                </div>
+                <div class="linea-record"><span>Marcha</span> <strong>13:17,46s <small>M.ª Mar</small></strong>
+                </div>
+                <div class="linea-record"><span>Martillo</span> <strong>21,95m <small>Vera</small></strong>
+                </div>
+            </div>
+            <div class="card-record" data-gender="masc">
+                <h3>Sub 14 - Masculino</h3>
+                <div class="linea-record"><span>80m Lisos</span> <strong>11,11s <small>Alejandro
+                            Soriano</small></strong>
+                </div>
+                <div class="linea-record"><span>Longitud</span> <strong>4,69m <small>Alejandro Soriano</small></strong>
+                </div>
+                <div class="linea-record"><span>Triple Salto</span> <strong>8,99m <small>Alejandro
+                            Soriano</small></strong>
+                </div>
+                <div class="linea-record"><span>Peso</span> <strong>7,80m <small>Alejandro Soriano</small></strong>
+                </div>
+                <div class="linea-record"><span>150m Lisos</span> <strong>22,66s <small>Alejandro
+                            Soriano</small></strong></div>
+            </div>
+            <div class="card-record" data-gender="fem">
+                <h3>Sub 14 - Femenino</h3>
                 <div class="linea-record"><span>60m Lisos</span> <strong>8,76s <small>Gema González</small></strong>
                 </div>
                 <div class="linea-record"><span>60m Vallas</span> <strong>10,86s <small>Olivia Sánchez</small></strong>
                 </div>
-
-                <div class="linea-record"><span>80m Lisos</span> <strong>11,11s <small>Alejandro
-                            Soriano</small></strong></div>
                 <div class="linea-record"><span>80m Vallas</span> <strong>14,16s <small>Olivia Sánchez</small></strong>
                 </div>
                 <div class="linea-record"><span>220m Vallas</span> <strong>37,78s <small>Olivia Sánchez</small></strong>
                 </div>
-                <div class="linea-record"><span>Longitud</span> <strong>4,69m <small>Alejandro Soriano</small></strong>
-                </div>
                 <div class="linea-record"><span>Altura</span> <strong>1,36m <small>Olivia Sánchez</small></strong></div>
-                <div class="linea-record"><span>Triple Salto</span> <strong>8,99m <small>Alejandro
-                            Soriano</small></strong></div>
-                <div class="linea-record"><span>Peso</span> <strong>7,80m <small>Alejandro Soriano</small></strong>
-                </div>
                 <div class="linea-record"><span>Jabalina</span> <strong>22,22m <small>Olivia Sánchez</small></strong>
                 </div>
-                <div class="linea-record"><span>Disco</span> <strong>20,38m <small>Vera</small></strong>
-                </div>
+                <div class="linea-record"><span>Disco</span> <strong>20,38m <small>Vera</small></strong> </div>
                 <div class="linea-record"><span>1000m (KM)</span> <strong>3:29,85s <small>Alicia
                             Serrano</small></strong>
                 </div>
                 <div class="linea-record"><span>500m</span> <strong>1:26,77 <small>Alicia Serrano</small></strong>
                 </div>
-
-                <div class="linea-record"><span>150m Lisos</span> <strong>22,66s <small>E.
-                            Martínez/A.Soriano</small></strong></div>
                 <div class="linea-record"><span>2000m Marcha</span> <strong>13:31,35 <small>M.ª Mar</small></strong>
                 </div>
             </div>
-        </div>
-
-
-        <h2 class="bloque-categoria">Categorías Mayores</h2>
-        <div class="grid-records">
-            <div class="card-record">
-                <h3>Sub 16</h3>
-                <div class="linea-record"><span>60m Lisos</span> <strong>8,12s <small>Adis</small></strong></div>
-                <div class="linea-record"><span>60m Vallas</span> <strong>10,19s <small>Leire González</small></strong>
+            <div class="card-record" data-gender="masc">
+                <h3>Sub 16 - Masculino</h3>
+                <div class="linea-record"><span>60m Lisos</span> <strong>8,12s <small>Adis</small></strong>
                 </div>
                 <div class="linea-record"><span>Longitud</span> <strong>4,75m <small>Adis</small></strong></div>
                 <div class="linea-record"><span>Peso</span> <strong>11,24m <small>Yael</small></strong></div>
-                <div class="linea-record"><span>Altura</span> <strong>1,25m <small>Gema</small></strong></div>
-                <div class="linea-record"><span>Jabalina</span> <strong>28,46m <small>Yael</small></strong></div>
-                <div class="linea-record"><span>300m Lisos</span> <strong>47,57s <small>Leire González</small></strong>
-                </div>
-                <div class="linea-record"><span>300m Vallas</span> <strong>54,12s <small>Leire González</small></strong>
-                </div>
-                <div class="linea-record"><span>100m Vallas</span> <strong>17,29s <small>Leire González</small></strong>
-                </div>
-                <div class="linea-record"><span>Triple Salto</span> <strong>9,27m <small>Leire González</small></strong>
+                <div class="linea-record"><span>Jabalina</span> <strong>28,46m <small>Yael</small></strong>
                 </div>
                 <div class="linea-record"><span>Disco</span> <strong>32,52m <small>Yael</small></strong></div>
-                <div class="linea-record"><span>100m Lisos</span> <strong>13,35s <small>Gema</small></strong></div>
-                <div class="linea-record"><span>600m</span> <strong>1:48,01s <small>Alicia Serrano</small></strong>
+
+            </div>
+            <div class="card-record" data-gender="fem">
+                <h3>Sub 16 - Femenino</h3>
+                <div class="linea-record"><span>60m Vallas</span> <strong>10,19s <small>Leire
+                            González</small></strong></div>
+                <div class="linea-record"><span>Altura</span> <strong>1,25m <small>Gema</small></strong></div>
+                <div class="linea-record"><span>300m Lisos</span> <strong>47,57s <small>Leire
+                            González</small></strong>
                 </div>
-                <div class="linea-record"><span>Martillo</span> <strong>12,44m <small>Leire González</small></strong>
+                <div class="linea-record"><span>300m Vallas</span> <strong>54,12s <small>Leire
+                            González</small></strong>
+                </div>
+                <div class="linea-record"><span>100m Vallas</span> <strong>17,29s <small>Leire
+                            González</small></strong>
+                </div>
+                <div class="linea-record"><span>Triple Salto</span> <strong>9,27m <small>Leire
+                            González</small></strong>
+                </div>
+                <div class="linea-record"><span>100m Lisos</span> <strong>13,35s <small>Gema</small></strong>
+                </div>
+                <div class="linea-record"><span>600m</span> <strong>1:48,01s <small>Alicia
+                            Serrano</small></strong>
+                </div>
+                <div class="linea-record"><span>Martillo</span> <strong>12,44m <small>Leire
+                            González</small></strong>
                 </div>
                 <div class="linea-record"><span>Pértiga</span> <strong>1,80m <small>Gema</small></strong></div>
             </div>
-
-            <div class="card-record">
-                <h3>Sub 18</h3>
-                <div class="linea-record"><span>60m Lisos</span> <strong>7,81s <small>Rubén Muñoz</small></strong></div>
-                <div class="linea-record"><span>60m Vallas</span> <strong>10,19s <small>Leire González</small></strong>
+            <div class="card-record" data-gender="masc">
+                <h3>Sub 18 - Masculino</h3>
+                <div class="linea-record"><span>60m Lisos</span> <strong>7,81s <small>Rubén
+                            Muñoz</small></strong>
                 </div>
-                <div class="linea-record"><span>Longitud</span> <strong>6,18m <small>Rubén Muñoz</small></strong></div>
+                <div class="linea-record"><span>Longitud</span> <strong>6,18m <small>Rubén
+                            Muñoz</small></strong>
+                </div>
                 <div class="linea-record"><span>Peso</span> <strong>11,49m <small>Yael</small></strong></div>
-                <div class="linea-record"><span>Altura</span> <strong>1,20m <small>Elena Quesada</small></strong></div>
-                <div class="linea-record"><span>Triple Salto</span> <strong>12,25m <small>Rubén Muñoz</small></strong>
+                <div class="linea-record"><span>Triple Salto</span> <strong>12,25m <small>Rubén
+                            Muñoz</small></strong>
                 </div>
                 <div class="linea-record"><span>Disco</span> <strong>34,47m <small>Yael</small></strong></div>
-                <div class="linea-record"><span>100m Lisos</span> <strong>12,41s <small>Gema</small></strong></div>
-                <div class="linea-record"><span>200m Lisos</span> <strong>29,11s <small>Leire González</small></strong>
+            </div>
+            <div class="card-record" data-gender="fem">
+                <h3>Sub 18 - Femenino</h3>
+                <div class="linea-record"><span>60m Vallas</span> <strong>10,19s <small>Leire
+                            González</small></strong>
+                </div>
+                <div class="linea-record"><span>Altura</span> <strong>1,20m <small>Elena
+                            Quesada</small></strong>
+                </div>
+                <div class="linea-record"><span>100m Lisos</span> <strong>12,41s <small>Gema</small></strong>
+                </div>
+                <div class="linea-record"><span>200m Lisos</span> <strong>29,11s <small>Leire
+                            González</small></strong>
                 </div>
             </div>
-            <div class="card-record">
-                <h3>Sub 20</h3>
-                <div class="linea-record"><span>60m Lisos</span> <strong>8,27s <small>Andrea Muñoz</small></strong>
+            <div class="card-record" data-gender="masc">
+                <h3>Sub 20 - Masculino</h3>
+            </div>
+            <div class="card-record" data-gender="fem">
+                <h3>Sub 20 - Femenino</h3>
+                <div class="linea-record"><span>60m Lisos</span> <strong>8,27s <small>Andrea
+                            Muñoz</small></strong>
                 </div>
-                <div class="linea-record"><span>Longitud</span> <strong>4,19m <small>Andrea Muñoz</small></strong></div>
-                <div class="linea-record"><span>Altura</span> <strong>1,15m <small>Marisa Quesada</small></strong></div>
-                <div class="linea-record"><span>Triple Salto</span> <strong>8,61m <small>Marisa Quesada</small></strong>
+                <div class="linea-record"><span>Longitud</span> <strong>4,19m <small>Andrea
+                            Muñoz</small></strong>
                 </div>
-                <div class="linea-record"><span>100m Lisos</span> <strong>13,57s <small>Andrea Muñoz</small></strong>
+                <div class="linea-record"><span>Altura</span> <strong>1,15m <small>Marisa
+                            Quesada</small></strong>
                 </div>
-                <div class="linea-record"><span>200m Lisos</span> <strong>35,34s <small>Rocío Romero</small></strong>
+                <div class="linea-record"><span>Triple Salto</span> <strong>8,61m <small>Marisa
+                            Quesada</small></strong>
                 </div>
-                <div class="linea-record"><span>400m Lisos</span> <strong>1:23,55 <small>Rocío Romero</small></strong>
+                <div class="linea-record"><span>100m Lisos</span> <strong>13,57s <small>Andrea
+                            Muñoz</small></strong>
+                </div>
+                <div class="linea-record"><span>200m Lisos</span> <strong>35,34s <small>Rocío
+                            Romero</small></strong>
+                </div>
+                <div class="linea-record"><span>400m Lisos</span> <strong>1:23,55 <small>Rocío
+                            Romero</small></strong>
                 </div>
             </div>
-        </div>
-
-        <h2 class="bloque-categoria">Categoría Máster</h2>
-        <div class="grid-records">
-            <div class="card-record">
-                <h3>Máster</h3>
-                <div class="linea-record"><span>60m Lisos</span> <strong>7,65s <small>Cayetano</small></strong></div>
-                <div class="linea-record"><span>100m Lisos</span> <strong>12,08s <small>Cayetano</small></strong>
+            <div class="card-record" data-gender="masc">
+                <h3>Máster - Masculino</h3>
+                <div class="linea-record"><span>60m Lisos</span> <strong>7,65s <small>Cayetano</small></strong>
                 </div>
-                <div class="linea-record"><span>Longitud</span> <strong>4,95m <small>Cristina López</small></strong>
+                <div class="linea-record"><span>100m Lisos</span> <strong>12,08s
+                        <small>Cayetano</small></strong>
                 </div>
-                <div class="linea-record"><span>Triple Salto</span> <strong>8,94m <small>Cristina
-                            Sánchez</small></strong></div>
-                <div class="linea-record"><span>Obstáculos</span> <strong>8:42,00 <small>Alicia</small></strong></div>
-                <div class="linea-record"><span>3.000m</span> <strong>10:52,76s <small>Javier González</small></strong>
+                <div class="linea-record"><span>3.000m</span> <strong>10:52,76s <small>Javier
+                            González</small></strong>
                 </div>
-                <div class="linea-record"><span>1.500m</span> <strong>4:55,06 <small>Javier González</small></strong>
+                <div class="linea-record"><span>1.500m</span> <strong>4:55,06 <small>Javier
+                            González</small></strong>
                 </div>
                 <div class="linea-record"><span>400m Vallas</span> <strong>1:14,30s <small>Enrique
                             Trunces</small></strong>
                 </div>
-                <div class="linea-record"><span>200m Lisos</span> <strong>24,67s <small>Cayetano</small></strong>
+                <div class="linea-record"><span>200m Lisos</span> <strong>24,67s
+                        <small>Cayetano</small></strong>
                 </div>
-                <div class="linea-record"><span>400m Lisos</span> <strong>1:02,00s <small>Cayetano</small></strong>
+                <div class="linea-record"><span>400m Lisos</span> <strong>1:02,00s
+                        <small>Cayetano</small></strong>
                 </div>
-                <div class="linea-record"><span>800m</span> <strong>2:29,07m <small>Carlos Vinsac</small></strong></div>
-                <div class="linea-record"><span>Disco</span> <strong>30,21m <small>Fernando Ariza</small></strong></div>
-                <div class="linea-record"><span>Peso</span> <strong>8,59m <small>Miguel Ángel Quesada</small></strong>
+                <div class="linea-record"><span>800m</span> <strong>2:29,07m <small>Carlos
+                            Vinsac</small></strong>
                 </div>
-                <div class="linea-record"><span>60m Vallas</span> <strong>10,62m <small>Carlos Vinsac</small></strong>
+                <div class="linea-record"><span>Disco</span> <strong>30,21m <small>Fernando
+                            Ariza</small></strong>
                 </div>
-                <div class="linea-record"><span>Altura</span> <strong>1,56m <small>Carlos Vinsac</small></strong></div>
+                <div class="linea-record"><span>Peso</span> <strong>8,59m <small>Miguel Ángel
+                            Quesada</small></strong>
+                </div>
+                <div class="linea-record"><span>60m Vallas</span> <strong>10,62m <small>Carlos
+                            Vinsac</small></strong>
+                </div>
+                <div class="linea-record"><span>Altura</span> <strong>1,56m <small>Carlos
+                            Vinsac</small></strong>
+                </div>
                 <div class="linea-record"><span>1.000m (KM)</span> <strong>3:25,50m <small>Carlos
                             Vinsac</small></strong></div>
-                <div class="linea-record"><span>4x200 (Relevos)</span> <strong>1:49,70 <small>C.
+                <div class="linea-record"><span>4x200 (Relevos Mixto)</span> <strong>1:49,70 <small>C.
+                            López / Alicia / Cayetano / C. Vinsac</small></strong></div>
+            </div>
+            <div class="card-record" data-gender="fem">
+                <h3>Máster - Femenino</h3>
+                <div class="linea-record"><span>Longitud</span> <strong>4,95m <small>Cristina
+                            López</small></strong>
+                </div>
+                <div class="linea-record"><span>Triple Salto</span> <strong>8,94m <small>Cristina
+                            Sánchez</small></strong></div>
+                <div class="linea-record"><span>Obstáculos</span> <strong>8:42,00 <small>Alicia</small></strong>
+                </div>
+                <div class="linea-record"><span>4x200 (Relevos Mixto)</span> <strong>1:49,70 <small>C.
                             López / Alicia / Cayetano / C. Vinsac</small></strong></div>
             </div>
         </div>
     </div>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-column about">
@@ -275,6 +336,24 @@
                 link.addEventListener('click', () => {
                     if (navLinks.classList.contains('active')) {
                         toggleMenu();
+                    }
+                });
+            });
+        });
+
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                document.querySelectorAll('.card-record').forEach(card => {
+                    const gender = card.getAttribute('data-gender');
+                    if (filter === 'all' || gender === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
                     }
                 });
             });
