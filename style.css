@@ -1186,3 +1186,48 @@ html {
 .btn-volver:hover {
     transform: scale(1.05);
 }
+
+
+.galeria-header {
+    text-align: center;
+    padding: 40px 20px;
+    font-weight: bold;
+}
+
+.galeria-header h1 {
+    color: var(--naranja);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.galeria-grid {
+    display: columns;
+    columns: 3 300px;
+    column-gap: 15px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+.galeria-item {
+    margin-bottom: 15px;
+    break-inside: avoid;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.galeria-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.1);
+}
+
+.galeria-item:hover {
+    opacity: 1;
+}

@@ -133,4 +133,8 @@
     .bloque-categoria {
         font-size: 1.4rem;
     }
+
+    .galeria-grid {
+        columns: 1;
+    }
 }
