@@ -130,6 +130,14 @@
         font-size: 1.8rem;
     }
 
+
+    .card-record {
+        width: 350px;
+        display: flex;
+        justify-content: center;
+    }
+
+
     .bloque-categoria {
         font-size: 1.4rem;
     }
