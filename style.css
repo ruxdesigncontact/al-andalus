@@ -1009,14 +1009,18 @@ html {
     color: #1a1a1a;
     border-left: 6px solid #ff6600;
     padding-left: 15px;
-    margin: 50px 0 25px;
+    margin: 60px 0 30px 20px;
     font-size: 1.8rem;
 }
 
 .grid-records {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 40px 5px;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .card-record {
@@ -1029,6 +1033,8 @@ html {
     display: flex;
     flex-direction: column;
     width: 380px;
+    height: 100%;
+    margin: 0;
 }
 
 .card-record:hover {
@@ -1053,11 +1059,11 @@ html {
 
 .linea-record {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
     padding: 12px 15px;
+    gap: 8px;
     border-bottom: 1px solid #f0f0f0;
-    transition: background 0.2s;
 }
 
 .linea-record:last-child {
@@ -1086,13 +1092,17 @@ html {
 .marca-valor {
     background: var(--naranja);
     color: white;
-    padding: 4px 10px;
+    padding: 4px 8px;
     border-radius: 6px;
     font-weight: 800;
-    font-size: 1rem;
-    min-width: 85px;
+    font-size: 0.9rem;
+    min-width: 75px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(255, 107, 0, 0.2);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    flex-shrink: 0;
 }
 
 .atleta-nombre {
@@ -1100,6 +1110,9 @@ html {
     font-size: 0.85rem;
     color: #666;
     font-style: italic;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .filter-container {

@@ -124,19 +124,12 @@
 
     .body-records {
         padding-top: 80px;
+        justify-content: center;
     }
 
     .records-header h1 {
         font-size: 1.8rem;
     }
-
-
-    .card-record {
-        width: 350px;
-        display: flex;
-        justify-content: center;
-    }
-
 
     .bloque-categoria {
         font-size: 1.4rem;
@@ -144,5 +137,43 @@
 
     .galeria-grid {
         columns: 1;
+    }
+}
+
+@media (max-width: 350px) {
+    .linea-record {
+        padding: 10px 8px;
+        font-size: 0.85rem;
+    }
+
+    .atleta-nombre {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-records {
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+        padding: 15px;
+        gap: 25px;
+    }
+
+    .card-record {
+        width: 100%;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .grid-records {
+        padding: 10px;
+    }
+
+    .card-record {
+        max-width: 100%;
     }
 }
