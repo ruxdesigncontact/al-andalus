@@ -824,14 +824,13 @@ html {
 }
 
 .resultados-imagen {
-    flex: 1;
+    display: flex;
 }
 
 .resultados-imagen img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    display: block;
 }
 
 .calendario-section .container {
