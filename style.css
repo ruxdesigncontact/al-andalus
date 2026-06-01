@@ -1363,3 +1363,239 @@ html {
 .legal-container strong {
     color: #ffffff;
 }
+
+.noticia-wrapper {
+    max-width: 1100px;
+    margin: 130px auto 60px auto;
+    padding: 0 20px;
+}
+
+.noticia-titulo {
+    color: #111111;
+    font-size: 2.6rem;
+    margin-bottom: 12px;
+}
+
+.noticia-meta {
+    display: flex;
+    gap: 15px;
+    color: #555555;
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+.noticia-bloque-principal {
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.noticia-col-foto {
+    flex: 1;
+    min-width: 350px;
+}
+
+.noticia-col-foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+}
+
+.noticia-col-texto {
+    flex: 1.2;
+}
+
+.noticia-texto {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #222222;
+    text-align: justify;
+    margin-top: 0;
+}
+
+.noticia-destacado {
+    border-left: 4px solid #ff6600;
+    background: rgba(255, 102, 0, 0.06);
+    padding: 22px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 25px;
+}
+
+.noticia-destacado p {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #111111;
+    line-height: 1.6;
+}
+
+.noticia-galeria-seccion {
+    margin-top: 50px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 30px;
+}
+
+.noticia-galeria-titulo {
+    color: #111111;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.noticia-galeria-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.noticia-galeria-grid img {
+    width: 49%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.noticia-wrapper {
+    max-width: 1100px;
+    margin: 130px auto 60px auto;
+    padding: 0 20px;
+}
+
+.noticia-titulo {
+    color: #111111;
+    font-size: 2.6rem;
+    margin-bottom: 12px;
+}
+
+.noticia-meta {
+    display: flex;
+    gap: 15px;
+    color: #555555;
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+/* DISEÑO DOS COLUMNAS EN PC */
+.noticia-bloque-principal {
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.noticia-col-foto {
+    flex: 1;
+    min-width: 350px;
+}
+
+.noticia-col-foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+}
+
+.noticia-col-texto {
+    flex: 1.2;
+}
+
+.noticia-texto {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #222222;
+    text-align: justify;
+    margin-top: 0;
+}
+
+.noticia-destacado {
+    border-left: 4px solid #ff6600;
+    background: rgba(255, 102, 0, 0.06);
+    padding: 22px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 25px;
+}
+
+.noticia-destacado p {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #111111;
+    line-height: 1.6;
+}
+
+/* TABLA DE MEDALLAS / RESULTADOS */
+.tabla-resultados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-resultados th {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px 15px;
+    font-weight: 600;
+}
+
+.tabla-resultados td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eeeeee;
+    color: #333333;
+}
+
+.tabla-resultados tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.medalla-icono {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* GALERÍA INFERIOR MULTIFOTO */
+.noticia-galeria-seccion {
+    margin-top: 50px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 30px;
+}
+
+.noticia-galeria-titulo {
+    color: #111111;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.noticia-galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.noticia-galeria-grid img {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+    /* Recorta de forma uniforme sin deformar */
+}
+
+/* RESPONSIVE */
