@@ -397,22 +397,73 @@ html {
 }
 
 .container-form {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
     text-align: center;
 }
 
-.form-section {
-    margin-top: 40px;
+.container-form h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--negro);
 }
 
-.form-section h2,
-.form-section p {
-    text-align: center;
-    font-weight: bold;
-    margin: 20px 20px;
+.container-form p {
+    color: #666;
+    margin-bottom: 30px;
 }
 
+.custom-form {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.custom-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--negro);
+    font-size: 0.9rem;
+}
+
+.custom-form input,
+.custom-form select,
+.custom-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fafafa;
+}
+
+.custom-form input:focus,
+.custom-form select:focus,
+.custom-form textarea:focus {
+    outline: none;
+    border-color: var(--naranja);
+    box-shadow: 0 0 8px rgba(255, 107, 0, 0.2);
+    background-color: #ffffff;
+}
 
 .btn-submit {
     background: var(--naranja);
@@ -421,14 +472,24 @@ html {
     padding: 15px 30px;
     font-size: 1rem;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     width: 100%;
-    transition: 0.3s;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .btn-submit:hover {
     background: var(--negro);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .form-group-row {
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .page-header {
