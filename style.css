@@ -591,6 +591,7 @@ html {
 
 .bank-info {
     margin-top: 20px;
+    margin-bottom: 10px;
     padding: 15px;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -1659,4 +1660,73 @@ html {
     /* Recorta de forma uniforme sin deformar */
 }
 
-/* RESPONSIVE */
+/* Sección Promocional del Cartel */
+.promo-cartel-section {
+    padding: 60px 5%;
+    background: linear-gradient(180deg, #111111 0%, #1a1a1a 100%);
+    color: var(--blanco);
+    text-align: center;
+}
+
+.promo-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo-badge {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.promo-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: var(--blanco);
+}
+
+.promo-container p {
+    color: #ccc;
+    max-width: 650px;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+.cartel-wrapper {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.25);
+    border: 2px solid #ff660033;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartel-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 107, 0, 0.4);
+}
+
+.cartel-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.promo-actions {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
