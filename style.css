@@ -1660,7 +1660,7 @@ html {
     /* Recorta de forma uniforme sin deformar */
 }
 
-/* Sección Promocional del Cartel */
+/* Sección Promocional de Carteles */
 .promo-cartel-section {
     padding: 60px 5%;
     background: linear-gradient(180deg, #111111 0%, #1a1a1a 100%);
@@ -1669,7 +1669,8 @@ html {
 }
 
 .promo-container {
-    max-width: 900px;
+    max-width: 1100px;
+    /* Ampliado para que quepan holgadamente los dos carteles */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1697,18 +1698,29 @@ html {
 
 .promo-container p {
     color: #ccc;
-    max-width: 650px;
+    max-width: 700px;
     margin-bottom: 30px;
     font-size: 1.05rem;
 }
 
+/* Contenedor de 2 columnas para los carteles */
+.carteles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    justify-items: center;
+    align-items: center;
+}
+
 .cartel-wrapper {
     width: 100%;
-    max-width: 550px;
+    max-width: 460px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.25);
-    border: 2px solid #ff660033;
+    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.2);
+    border: 2px solid rgba(255, 102, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1724,7 +1736,7 @@ html {
 }
 
 .promo-actions {
-    margin-top: 35px;
+    margin-top: 40px;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
